@@ -11,7 +11,7 @@
 - 출시 후 v1.1 후보에 독립 한국 식품 라벨 55장 QA와 릴리스 게이트를 적용했고, 잔여 오답과 표본 공백을 근거로 **배포를 보류(No-Go)**했다. 이는 프로젝트 전체의 No-Go나 “정확도가 낮아 포기”한 결과가 아니라, 측정과 회귀 기준으로 검증되지 않은 업데이트를 차단한 릴리스 판단이다.
 - **보류 사유를 정확도가 아닌 제품 구조로 해결하고 2026-08-12에 v1.0.2를 원스토어에 배포했다.** 당시까지 공개 배포 이력은 v1.0 → v1.0.2 2건이었다. 상세는 아래 「6. 보류 이후 — v1.0.2」.
 - 2026-09-17 v2 UI/UX 리디자인과 로컬 release-readiness를 닫고, 2026-09-18 기준 exact RC `9c8b0ef`를 `2.0.0/code5`로 확정했다. exact RC gate는 JVM unit `107/107`, lint `0` errors, Galaxy A32 explicit 19-class non-OCR instrumentation `65/65`를 통과했다. v2는 D-028에 따라 light-only이며 D-031에 따라 route transition을 즉시 전환으로 고정한다.
-- Google Play에는 v2.0.0/code5가 closed Alpha로 출시돼 선택한 테스터에게 제공 중이고 `>=12` opt-in gate가 확인됐다. 14일 요건과 Production 공개는 아직 완료되지 않았다.
+- Google Play에는 v2.0.0이 closed Alpha 비공개 테스트(`>=12` opt-in, 14일 요건)를 거쳐 2026-10-07 정식 출시됐다.
 - ONEstore v2.0.0/code5는 개발자 확인 기준 검증 통과·배포 완료 상태다. Browser Control 중단 이후 콘솔을 독립 재확인하지 않았으므로, 이 외부 상태의 증거 등급은 사용자 확인으로 기록한다.
 
 > **2026-08-15 개정 이력**: 이 문서는 2026-07-22 종료 시점 판정(`v1.0 Released / v1.1 QA No-Go / Archived`)을 담고 있었다.
@@ -197,7 +197,7 @@ D-30/D-180 이중 릴리스 회귀:
 
 다음 항목은 저장소 코드·문서·로컬 digest와 검증 로그로 뒷받침된다. 문장으로 과장하지 않고 사실 단위로만 재사용한다.
 
-- Kotlin·Jetpack Compose 기반 오프라인 우선 Android 앱을 단독 개발하고 ONEstore에 v1.0 → v1.0.2 → v2.0.0/code5를 공개 배포했다. Google Play는 같은 v2의 closed Alpha 단계이며 Production 공개는 아직 아니다.
+- Kotlin·Jetpack Compose 기반 오프라인 우선 Android 앱을 단독 개발하고 ONEstore에 v1.0 → v1.0.2 → v2.0.0/code5를 공개 배포했다. Google Play에는 2026-10-07 v2.0.0을 정식 출시했다.
 - Release APK에서 `INTERNET` 권한을 제거했고 앱 수준의 광고·분석·추적 SDK를 추가하지 않았으며 식품 기록은 Room/DataStore에 로컬 저장한다.
 - 출시 후 서로 다른 한국 식품 라벨 55장으로 D-30/D-180 조건부 OCR 기준선을 측정했다.
 - D-30 정확 일치 37/55에서 40/55로 개선했고 최대 실패 유형 `wrong_date`를 14건에서 11건으로 줄였다.

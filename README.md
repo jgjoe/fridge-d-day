@@ -3,11 +3,11 @@
 **유통기한을 촬영·직접 입력으로 관리하고, 인식 결과를 확인한 뒤 저장하는 로컬 우선 Android 앱**
 
 [![ONEstore](https://img.shields.io/badge/ONEstore-v2.0.0%20public-brightgreen)](https://m.onestore.co.kr/v2/ko-kr/app/0001003331)
-[![Google Play](https://img.shields.io/badge/Google%20Play-%EC%A0%95%EC%8B%9D%20%EC%B6%9C%EC%8B%9C%20%EC%8B%AC%EC%82%AC%20%EC%A4%91-orange?logo=googleplay&logoColor=white)](https://play.google.com/apps/testing/app.fridgedday)
+[![Google Play](https://img.shields.io/badge/Google%20Play-v2.0.0-brightgreen?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=app.fridgedday)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 
-ONEstore에 **v2.0.0**을 공개 배포했고, Google Play는 비공개 테스트를 마치고 **정식 출시 심사 중**입니다.
+ONEstore와 Google Play에 **v2.0.0**을 공개 배포했습니다.
 
 <p align="center">
   <img src="docs/images/today-fresh-1.png" width="31%" alt="오늘도 신선 v2 Today 화면" />
@@ -45,7 +45,7 @@ v2는 **light-only**로 고정했고 시스템 night mode와 무관하게 같은
 - 55장 고정 OCR 회귀셋으로 변경 전후 퇴행 여부를 반복 확인
 - 사용성 테스트에서 찾은 반복 마찰을 수정하고, 해당 사용자에게 수정 흐름을 다시 검증
 - 릴리스 빌드에 `INTERNET` 권한과 비공개 QA 자료가 들어가지 않았음을 자동 검증
-- ONEstore **v2.0.0 공개 배포**, Google Play 비공개 테스트 완료
+- ONEstore·Google Play **v2.0.0 공개 배포**
 
 검증 기록:
 
