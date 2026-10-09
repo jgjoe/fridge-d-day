@@ -4,7 +4,7 @@
 
 > ## 2026-09-18 현재 배포 상태
 >
-> ONEstore에는 v2.0.0/code5가 공개 배포되어 있고, Google Play에는 같은 버전이 closed Alpha로 출시되어 있다. Play의 `>=12` opt-in gate는 확인됐지만 14일 요건과 Production 공개는 아직 진행 중이다. 현재 릴리스 상태의 정본은 [QA_RELEASE_RECORD.md](../../QA_RELEASE_RECORD.md)다.
+> ONEstore에는 v2.0.0/code5가 공개 배포되어 있고, Google Play에는 closed Alpha 비공개 테스트를 거쳐 2026-10-07 v2.0.0이 정식 출시되어 있다. 현재 릴리스 상태의 정본은 [QA_RELEASE_RECORD.md](../../QA_RELEASE_RECORD.md)다.
 >
 > ## 🔄 2026-08-15 개정 — 아래는 2026-07-22 v1.1 QA 시점 기록이다
 >
